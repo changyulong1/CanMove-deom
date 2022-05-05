@@ -134,10 +134,9 @@ var _css = _interopRequireDefault(require("./css"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(marked.marked);
 var bofang = {
   id: undefined,
-  timt: 100,
+  timt: 50,
   ul: {
     deom1: document.querySelector("#deom1 pre code"),
     deom2: document.querySelector("#deom2"),
@@ -158,7 +157,6 @@ var bofang = {
       return;
     }
 
-    console.log(_css.default.substring(0, bofang.n));
     bofang.ul.deom1.innerHTML = _css.default.substring(0, bofang.n);
     bofang.ul.deom2.innerHTML = _css.default.substring(0, bofang.n);
     hljs.highlightAll();

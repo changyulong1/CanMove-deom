@@ -1,8 +1,7 @@
 import string from './css'
-console.log(marked.marked)
 const bofang = {
     id: undefined,
-    timt: 100,
+    timt: 50,
     ul: {
         deom1: document.querySelector("#deom1 pre code"),
         deom2: document.querySelector("#deom2"),
@@ -22,7 +21,6 @@ const bofang = {
             clearInterval(bofang.id)
             return
         }
-        console.log(string.substring(0, bofang.n))
         bofang.ul.deom1.innerHTML = string.substring(0, bofang.n)
         bofang.ul.deom2.innerHTML = string.substring(0, bofang.n)
         hljs.highlightAll();
