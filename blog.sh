@@ -7,12 +7,12 @@ set -e
 # yarn run build
 
 # cd 到构建输出的目录下
-# cd dist
+cd dist
 
 # 部署到自定义域域名
 # echo 'www.example.com' > CNAME
 
-# git init
+git init
 git add .
 git commit -m '优化'
 git remote add origin git@github.com:changyulong1/CanMove.git
